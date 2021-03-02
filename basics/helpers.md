@@ -5,7 +5,7 @@
 
 ### Introduction
 
-Vancil includes many helper functions to use throughout your application.
+Vancil includes many global helper functions to use throughout your application.
 
 ### Available Functions
 
