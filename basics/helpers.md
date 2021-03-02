@@ -9,3 +9,9 @@ Vancil includes many global helper functions to use throughout your application.
 
 ### Available Functions
 
+#### Strings
+
+|  |  |  |
+| :--- | :--- | :--- |
+| ClassBaseName |  |  |
+
