@@ -2,7 +2,7 @@
 
 * [Initial page](README.md)
 
-## Helpers
+## Basics
 
-* [String Helpers](helpers/string-helpers.md)
+* [Helpers](basics/helpers.md)
 
