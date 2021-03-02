@@ -19,7 +19,7 @@ Vancil includes many global helper functions to use throughout your application.
 
 Returns the class name of the given class with the class' namespace removed.
 
-```text
+```csharp
 new StringHelper().ClassBaseName("Foo.Bar.Baz")
 
 // Baz
