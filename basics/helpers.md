@@ -14,6 +14,7 @@ Vancil includes many global helper functions to use throughout your application.
 |  |  |  |
 | :--- | :--- | :--- |
 | [ClassBaseName](helpers.md#classbasename) |  |  |
+| [After](helpers.md#after) |  |  |
 
 #### \# ClassBaseName
 
@@ -25,5 +26,13 @@ new StringHelper().ClassBaseName("Foo.Bar.Baz")
 // Baz
 ```
 
+#### \# After
 
+Returns everything after the given value of the string.
+
+```csharp
+new StringHelper().After("Hi, how are you", "Hi, how")
+
+//" are you"
+```
 
