@@ -3,13 +3,9 @@
 You can use dependency injection to bring classes from the package into your application.  You can configure your container in your _Startup.ConfigureServices_ method:
 
 ```aspnet
-public class Startup 
+public void ConfigureServices(IServiceCollection services) 
 {
-  public void ConfigureServices(IServiceCollection services) 
-  {
-    services.AddTransient<IStringHelper, StringHelper>();
-  }
-  // ...
+  services.AddTransient<IStringHelper, StringHelper>();
 }
 ```
 
