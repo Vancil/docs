@@ -25,7 +25,7 @@ public class BooksController : Controller
   public async Task<IActionResult> GetBookTitleBase() 
   {
     var titleBase = _stringHelper.Before("Harry Potter and the Half-Bloog Prince", "and")
-    //titlebase = "HarryPotter"
+    //titlebase = "Harry Potter"
   }
 }
 ```
