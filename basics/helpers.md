@@ -16,6 +16,8 @@ Vancil includes many global helper functions to use throughout your application.
 | [ClassBaseName](helpers.md#classbasename) |  |  |
 | [After](helpers.md#after) |  |  |
 | [AfterLast](helpers.md#afterlast) |  |  |
+| [Before](helpers.md#before) |  |  |
+| [BeforeLast](helpers.md#beforelast) |  |  |
 
 #### \# ClassBaseName
 
@@ -39,11 +41,31 @@ new StringHelper().After("Hi, how are you", "Hi, how")
 
 #### \# AfterLast
 
-Returns everything after the last occurence of the given string value.
+Returns everything after the last occurrence of the given string value.
 
 ```csharp
-new StringHelper().AfterLast("Vancil.Project.Namepsace", ".")
+new StringHelper().AfterLast("Vancil.Project.Namespace", ".")
 
 //"Namespace"
+```
+
+#### \# Before
+
+Returns everything before the given value of the string.
+
+```csharp
+new StringHelper().Before("Hi, how are you", "are you")
+
+//"Hi, how "
+```
+
+#### \# BeforeLast
+
+Returns everything before the last occurrence of the given value in a string.
+
+```csharp
+new StringHelper().BeforeLast("Vancil.Project.Namespace", ".")
+
+//"Vancil.Project"
 ```
 
