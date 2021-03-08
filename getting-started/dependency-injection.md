@@ -4,7 +4,9 @@ You can use dependency injection to bring classes from the package into your app
 
 ```aspnet
 public class Startup {
-  public void ConfigureServices(IServiceCollection services) {
+
+  public void ConfigureServices(IServiceCollection services) 
+  {
     services.AddTransient<IStringHelper, StringHelper>();
   }
   // ...
@@ -18,7 +20,8 @@ public class BooksController : Controller {
 
   private readonly IStringHelper _stringHelper;
   
-  public BooksController(IStringHelper stringHelper) {
+  public BooksController(IStringHelper stringHelper) 
+  {
     _stringHelper = stringHelper;
   }
  
