@@ -2,7 +2,7 @@
 
 You can use dependency injection to bring classes from the package into your application.  You can configure your container in your _Startup.ConfigureServices_ method:
 
-```aspnet
+```csharp
 public void ConfigureServices(IServiceCollection services) 
 {
   services.AddTransient<IStringHelper, StringHelper>();
@@ -11,7 +11,7 @@ public void ConfigureServices(IServiceCollection services)
 
 When a request gets routed to your controller, it will be [resolved from the container](https://github.com/aspnet/Mvc/blob/eeac99985a61e75ca48e620f0371e16df018d6d7/src/Microsoft.AspNetCore.Mvc.Core/Controllers/ServiceBasedControllerActivator.cs#L16-L26) along with all its dependencies:
 
-```aspnet
+```csharp
 public class BooksController : Controller 
 {
   private readonly IStringHelper _stringHelper;
