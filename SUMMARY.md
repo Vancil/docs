@@ -1,7 +1,10 @@
 # Table of contents
 
-* [Getting Started](README.md)
-* [Dependency Injection](dependency-injection.md)
+* [Introduction](README.md)
+
+## Getting Started
+
+* [Dependency Injection](getting-started/dependency-injection.md)
 
 ## Basics
 
